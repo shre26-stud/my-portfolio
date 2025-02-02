@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/160de5337d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <a href='index.html#header'><img src="images/logo.png" class="logo" alt=""></a> -->
+                <div id="nav">
+                    <ul id="sidemenu">
+                     <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#" download class="button b2">Download CV</a></li> <!-- Moved download button here -->
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Shresth Pratap Singh,</span> <br> <span id="changingText">Web Developer</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------about---------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-heading">About Me</h1>
+                    <p>
+                        I am a full stack developer with a passion for creating beautiful and functional websites.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Application</li>
+                            <li><span>CSS</span><br>Decorating Web page</li>
+                            <li><span>JS</span><br>Designing Web page</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Looking For Internships</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Current</span><br>Pursuing BCA from SHRI RAMSWAROOP MEMORIAL UNIVERSITY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------Services---------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-heading">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam similique soluta id, voluptates dicta sint. Minima dolorem ab inventore veniam, saepe facilis obcaecati corrupti mollitia placeat aliquam, accusamus voluptatibus qui?</p>
+                    <a href="WebProjects.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Title 2</h2>
+                    <p>Some thing about title 2</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Title 3</h2>
+                    <p>Some thing about title 3</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+  <!-- -------------------------Portfolio---------------------- -->
+
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Famous Projects</h1>
+        <div class="work-list">
+            <div class="work-item">
+                <img src="images/work-1.png" alt="work1">
+                <div class="layer">
+                    <h3>Work 1</h3>
+                    <p>Description of Work 1</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/work-2.png" alt="work2">
+                <div class="layer">
+                    <h3>Work 2</h3>
+                    <p>Description of Work 2</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/work-3.png" alt="work3">
+                <div class="layer">
+                    <h3>Work 3</h3>
+                    <p>Description of Work 3</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="button">See More</a>
+    </div>
+  </div>
+
+  <!-- -------------------------Contact---------------------- -->
+   
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-details">
+                <h1 class="sub-title">Contact Me</h1>
+                <P> <i class="fa-regular fa-envelope"></i>  shresthpratap30@gmail.com</P>
+                <P> <i class="fa-solid fa-mobile-screen"></i> +91-7973987242</P>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button b2">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   </div>
+
+</body>
+</html>
